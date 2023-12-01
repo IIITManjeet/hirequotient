@@ -94,7 +94,12 @@ const Pagination = ({
               {number}
             </button>
           ) : (
-            <button key={number} className={styles.button} onClick={changePage}>
+            <button
+              key={number}
+              style={{ color: "grey" }}
+              className={styles.button}
+              onClick={changePage}
+            >
               {number}
             </button>
           )

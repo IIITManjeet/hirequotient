@@ -1,10 +1,9 @@
 * {
-  box-sizing: border-box;
   margin: auto;
 }
 table {
   margin-top: 20px;
-  width: 90%;
+  width: 70%;
   border-collapse: collapse;
 }
 
@@ -19,10 +18,16 @@ th {
 .search {
   margin-top: 60px;
   display: flex;
-  width: 90%;
+  justify-items: center;
+  align-items: flex-start;
+  margin-left: 15%;
+  width: 50%;
 }
 .search > input {
   width: 100%;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   padding: 10px;
@@ -31,24 +36,48 @@ th {
   border-width: 1px;
 }
 .bc {
-  background-color: grey;
+  background-color: #999;
+  border-radius: 10px;
   color: white;
 }
 .nc {
   background-color: white;
+  border-radius: 10px;
   color: black;
 }
 .deleteButton {
-  font-size: "18px";
-  color: red;
-  background-color: white;
-  border-color: red;
-  outline: none;
-  border: 1px solid;
-  padding-top: 3px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  margin-left: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-left: 30%;
+  border: 1px red solid;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  width: 160px;
+}
+.text {
+  padding-right: 5px;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+.del {
+  color: white;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 40px;
+  border-radius: 10px;
+  background-color: inherit;
+  outline: none;
+  border: none;
 }
 th:first-of-type {
   border-top-left-radius: 10px;

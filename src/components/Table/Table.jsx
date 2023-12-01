@@ -68,7 +68,13 @@ const Table = ({
   };
 
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+      }}
+    >
       <div className="search">
         <input
           type="text"
@@ -121,10 +127,13 @@ const Table = ({
           ))}
         </tbody>
       </table>
-      <button className="deleteButton" onClick={deleteSelected}>
-        <MdDeleteOutline size={25} />
-      </button>
-    </>
+      <div className="deleteButton">
+        <button className="del" onClick={deleteSelected}>
+          <MdDeleteOutline size={25} />
+        </button>
+        <span className="text">Delete Multiple</span>
+      </div>
+    </div>
   );
 };
 
